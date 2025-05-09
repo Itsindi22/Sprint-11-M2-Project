@@ -24,7 +24,7 @@ Watch the first few minutes of the Module Project Solution Video to get a demo o
 
 ### 👉 TASK 2 - Study the API using Postman
 
-#### Endpoint A: [POST] `http://localhost:3003/api/auth/login`
+#### Endpoint A: [POST] `http://localhost:3003/api/auth/login` password is required
 
 This endpoint allows to log users in by sending a valid username and password in the request body.
 
@@ -37,7 +37,8 @@ The response includes an authorization token in its body.
 
 ❗ You should never use passwords like that in the real world!
 
-#### Endpoint B: [POST] `http://localhost:3003/api/auth/register`
+#### Endpoint B: [POST] `http://localhost:3003/api/auth/register`     "message": "Ouch: password is required"
+
 
 This endpoint allows to create a new user by sending a valid username and password in the request body.
 
@@ -47,7 +48,7 @@ The response includes a welcome message in its body.
 
 - `{ "username": "jess", password: "abcdefgh" }`
 
-#### Endpoint C: [GET] `http://localhost:3003/api/stars`
+#### Endpoint C: [GET] `http://localhost:3003/api/stars` measage: token is Requried 
 
 This endpoint allows you to GET a list of Hollywood stars by sending a valid token in the Authorization header of the request, otherwise the response is a 401 Unauthorized.
 
